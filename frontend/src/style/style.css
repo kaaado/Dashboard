@@ -1,0 +1,425 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Cairo', sans-serif;
+    font-size: 20px;
+    overflow: hidden;
+}
+
+/*   class made */
+.d-flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.d-flex-sps-btwn {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.flex {
+    display: flex;
+    justify-content: flex-end;
+}
+
+/*header */
+
+.container {
+    padding: 0 60px;
+    height: 60px;
+    background-color: #000;
+    color: white;
+}
+
+nav .nav-link,
+nav a {
+    flex-direction: row;
+    gap: 20px;
+    text-decoration: none;
+    color: white;
+}
+
+nav .active {
+    color: gold;
+}
+
+nav .nav-button {
+    gap: 10px;
+}
+
+/*  Sign up*/
+.father {
+    background-color: #000;
+    height: 100vh;
+    font-size: 16px;
+    text-align: center;
+}
+
+.father form {
+    background-color: black;
+    padding: 15px;
+    border: gold 3px solid;
+    border-radius: 20px;
+    color: white;
+    width: 500px;
+    height: 480px;
+    gap: 6px;
+    flex-direction: column;
+}
+
+.father input,
+.father textarea,
+.father button,
+.registre-button {
+    padding: 5px;
+    height: 35px;
+    width: 300px;
+    outline: none;
+    border: gold 2px solid;
+    border-radius: 20px;
+    color: white;
+    text-align: center;
+    background-color: #000;
+}
+
+.father input::placeholder,
+.father textarea::placeholder {
+    color: #ddd;
+    text-align: center;
+
+}
+
+.father textarea {
+    height: 50px;
+    width: 300px;
+    font-size: 14px;
+}
+
+.pas:focus,
+.mail:focus {
+    width: 360px;
+}
+
+.father p {
+    margin: 0;
+    font-size: 14px;
+    color: rgba(231, 39, 39)
+}
+
+.father button,
+.registre-button {
+    cursor: pointer;
+    transition: background-color 0.5s;
+    margin-top: 8px;
+    height: 45px;
+    width: 120px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.father button:hover,
+.registre-button:hover {
+    background-color: gold;
+    color: black;
+}
+
+/*  Sign In  */
+.father .parenet {
+    width: 370px;
+    height: 280px;
+}
+
+/*dashboard*/
+.dash {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+/*top bar*/
+.topBar {
+    padding: 0 60px;
+    height: 60px;
+    background-color: #000;
+    color: white;
+    box-shadow: 0px 4px 4px gold;
+}
+
+/*     Side Bar*/
+.sidebar-container {
+    width: 15%;
+    height: 100%;
+    position: sticky;
+    background-color: rgb(0, 0, 0);
+    box-shadow: 4px 0px 4px gold;
+    text-align: left;
+    margin-top: 4px;
+}
+
+.sideBar {
+    width: 100%;
+}
+
+/* side item */
+.sideBar .sideItem {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    height: 75px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    margin-left: 18px;
+    transition: all 0.3s ease;
+    padding: 1px;
+}
+
+.sideBar .sideItem:first-child {
+    margin-top: 20px;
+}
+
+.sideBar .active,
+.sideBar .active i {
+    color: gold;
+}
+
+.sideBar .active {
+    transform: translateX(-20px);
+}
+
+.sideBar .active::before {
+    content: '';
+    height: 80%;
+    width: 6px;
+    border-radius: 5px;
+    background-color: gold;
+    margin-right: 10px;
+}
+
+.sideBar .sideItem:hover {
+    transform: scale(1.1);
+    color: gold;
+
+}
+
+.sideBar .sideItem:active {
+    transform: scale(0.9);
+}
+
+.sideItem i {
+    margin-right: 15px;
+    color: #ffffff;
+}
+
+.sideItem:hover i,
+.sideItem:active i {
+    color: gold;
+}
+
+/*main */
+.main {
+    margin-top: 4px;
+    height: 100vh;
+    background-color: #000;
+    color: white;
+    width: 85%;
+}
+
+/*users*/
+.users {
+    display: flex;
+    justify-content: center;
+    margin-top: 4px;
+}
+
+/*tablee*/
+
+.user-table {
+    margin-top: 35px;
+    border-collapse: collapse;
+    width: 90%;
+}
+
+.user-table th,
+.user-table td {
+    padding: 10px;
+    /* White border around table cells */
+}
+
+.user-table th {
+    background-color: #131518;
+    /* Header background color */
+}
+
+.user-table th,
+.user-table td {
+    text-align: center;
+}
+
+/* Style the table header cells */
+.user-table th {
+    background-color: #131518;
+    color: #fff;
+}
+
+.user-table tr {
+    border: 5px solid black;
+    background-color: #131518;
+}
+
+/*icon tableu*/
+.icon {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+/* Loading screeen*/
+.loader-container {
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    color: gold;
+    background-color: rgba(0, 0, 0, 0.9587);
+    flex-direction: column;
+    gap: 10px;
+}
+
+.loader {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border: 8px solid gold;
+    border-radius: 50%;
+    border-top: 8px solid black;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* products*/
+/* New Products */
+
+.image-input-container input {
+    height: 35px;
+    width: 300px;
+    outline: none;
+    border: gold 2px solid;
+    border-radius: 20px;
+    color: white;
+    text-align: center;
+    background-color: #000;
+}
+
+.image-preview {
+    margin-top: 5px;
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.image-preview img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border-radius: 20%;
+}
+
+.image-preview p {
+    margin-top: 5px;
+    color: white;
+}
+
+/* Move title and desc up when image is selected */
+.father .prod form {
+    position: relative;
+}
+
+.father .prod label,
+.father .prod input,
+.father .prod button {
+    transition: margin-top 0.5s ease;
+}
+
+.father .prod input:focus+.image-input-container label,
+.father .prod input:valid+.image-input-container label {
+    margin-top: -40px;
+}
+
+.father .prod label {
+    margin-top: 10px;
+    /* Adjust as needed */
+}
+
+/* products Card*/
+
+/* Add these styles to your existing CSS */
+
+.product-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s;
+    margin: 10px;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.product-card:hover {
+    transform: scale(1.05);
+}
+
+.product-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.product-details {
+    padding: 15px;
+}
+
+.product-details h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.product-details p {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 5px;
+}
+
+.product-details p:last-child {
+    margin-bottom: 0;
+}
+
+.products-page {
+    padding: 20px;
+}
+
+.product-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
