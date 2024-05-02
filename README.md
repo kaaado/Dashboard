@@ -47,6 +47,6 @@ This repository contains a dashboard website project built using React.js for th
 Hi there! I'm Yacine Kermame, a frontend web developer with extensive experience in React.js and a passion for creating intuitive user interfaces. If you have any questions or need assistance with this project, feel free to reach out to me:
 
 - **Email**: yacineyoyoker@gmail.com
-- **GitHub**: [yoyoker](https://github.com/kaaado)
+- **GitHub**: [kaaado](https://github.com/kaaado)
 - **Facebook**: [Yacine Kermame](https://facebook.com/yacine.kermam.7)
 
